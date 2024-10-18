@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X74GNTJ5TF"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-X74GNTJ5TF'); </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5445467448183616"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="PLANILHAS DE TREINOS">
+    <meta name="keywords" content="planilha de treino,musculação,crossfit,treinamento funcional">
+    <meta name="author" content="Ulisses Melo">
+    <title>IMC</title>
+    <link href="ava.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="teste">
+        <p>IMC</p>
+    </div>
+
+    <script>
+        var peso = prompt('informe o seu peso');
+        var altura = prompt('informe a sua altura em m');
+        var altura2;
+        var result;
+        peso = parseFloat(peso);
+        altura = parseFloat(altura);
+        altura2 = parseFloat(altura2);
+        result = parseFloat(result);
+        var imc;
+        imc = parseFloat(imc);
+        altura2 = altura * altura;
+        imc = peso / altura2;
+        result = imc.toFixed(2);
+        if (imc < 18.5) {
+            alert('o seu IMC é de, ' + result + ' voce está muito magro, normal entre 18.5 e 24.9');
+        }
+
+        if (imc >= 18.5 && imc < 25) {
+            alert('o seu IMC é de, ' + result + ' voce está normal, normal entre 18.5 e 24.9');
+        }
+
+        if (imc >= 25 && imc < 30) {
+            alert('o seu IMC é de, ' + result + ' voce está com sobrepeso, normal entre 18.5 e 24.9');
+        }
+
+        if (imc >= 30 && imc < 35) {
+            alert('o seu IMC é de, ' + result + ' voce está com obesidade I, normal entre 18.5 e 24.9');
+        }
+
+        if (imc >= 35 && imc < 40) {
+            alert('o seu IMC é de, ' + result + ' voce está com obesidade II, normal entre 18.5 e 24.9');
+        }
+
+        if (imc >= 40) {
+            alert('o seu IMC é de, ' + result + ' voce está com obesidade III, normal entre 18.5 e 24.9');
+        }
+
+    </script>
+
+    <div class="voltar">
+        <a href="index.html">voltar</a>
+    </div>
+
+</body>
+
+</html>

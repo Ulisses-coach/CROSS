@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X74GNTJ5TF"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-X74GNTJ5TF'); </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5445467448183616"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="PLANILHAS DE TREINOS">
+    <meta name="keywords" content="planilha de treino,musculação,crossfit,treinamento funcional">
+    <meta name="author" content="Ulisses Melo">
+    <title>PERCENTUALFEM</title>
+    <link href="ava.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="teste">
+        <p>COMPOSIÇÃO CORPORAL FEM</p>
+    </div>
+
+    <script>
+        var pesoFM = prompt('informe o seu peso');
+        var tricipitalFM = prompt('informe a dobra cutânea tricipital');
+        var subescapularFM = prompt('informe a dobra cutânea subescapular');
+        var suprailiacaFM = prompt('informe a dobra cutânea suprailíaca');
+        var abdominalFM = prompt('informe a dobra cutânea abdominal');
+        var somaFM;
+        var constanteaFM;
+        var percentualDeGorduraFM;
+        var pesoDeGorduraFM;
+        var pesoDeGorduraFinallFM;
+        var massaMagraFM;
+        var pesoIdealMinimoFM;
+        var pesoIdealMaximoFM;
+        var pesoIdealMedioFM;
+
+        pesoFM = parseFloat(pesoFM);
+        tricipitalFM = parseFloat(tricipitalFM);
+        subescapularFM = parseFloat(subescapularFM);
+        suprailiacaFM = parseFloat(suprailiacaFM);
+        abdominalFM = parseFloat(abdominalFM);
+        somaFM = parseFloat(somaFM);
+        constanteaFM = parseFloat(constanteaFM);
+        percentualDeGorduraFM = parseFloat(percentualDeGorduraFM);
+        pesoDeGorduraFM = parseFloat(pesoDeGorduraFM);
+        pesoDeGorduraFinallFM = parseFloat(pesoDeGorduraFinallFM);
+        massaMagraFM = parseFloat(massaMagraFM);
+        pesoIdealMinimoFM = parseFloat(pesoIdealMinimoFM);
+        pesoIdealMaximoFM = parseFloat(pesoIdealMaximoFM);
+        pesoIdealMinimoFM = parseFloat(pesoIdealMinimoFM);
+
+        somaFM = tricipitalFM + subescapularFM + suprailiacaFM + abdominalFM;
+        constanteaFM = somaFM * 0.153;
+        percentualDeGorduraFM = constanteaFM + 5.783;
+        pesoDeGorduraFM = percentualDeGorduraFM * pesoFM;
+        pesoDeGorduraFinallFM = pesoDeGorduraFM / 100;
+        massaMagraFM = pesoFM - pesoDeGorduraFinallFM;
+        pesoIdealMinimoFM = massaMagraFM / 0.84;
+        pesoIdealMaximoFM = massaMagraFM / 0.75;
+        pesoIdealMedioFM = (pesoIdealMinimoFM + pesoIdealMaximoFM) / 2;
+
+        percentualDeGorduraFM = percentualDeGorduraFM.toFixed(2);
+        pesoDeGorduraFinallFM = pesoDeGorduraFinallFM.toFixed(2);
+        massaMagraFM = massaMagraFM.toFixed(2);
+        pesoIdealMinimoFM = pesoIdealMinimoFM.toFixed(2);
+        pesoIdealMedioFM = pesoIdealMedioFM.toFixed(2);
+        pesoIdealMaximoFM = pesoIdealMaximoFM.toFixed(2);
+        pesoFM = pesoFM.toFixed(2);
+
+        if (percentualDeGorduraFM < 16) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está muito magra, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 16 && percentualDeGorduraFM < 19) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está EXCELENTE, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 19 && percentualDeGorduraFM < 23) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está MUITO BOM, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 23 && percentualDeGorduraFM < 26) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está BOM, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 26 && percentualDeGorduraFM < 29) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está NA MÉDIA, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 29 && percentualDeGorduraFM < 32) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está ACIMA DA MÉDIA, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 32 && percentualDeGorduraFM < 36) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está RUIM, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+        if (percentualDeGorduraFM >= 36) {
+            alert('o seu peso atual é de ' + pesoFM + 'kg, o seu percentual de gordura é de, ' + percentualDeGorduraFM + '%, voce está MUITO RUIM, normal entre 27% e 29%, o seu peso de gordura é de ' + pesoDeGorduraFinallFM + 'kg, a sua massa magra é de ' + massaMagraFM + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimoFM + 'kg, o seu peso ideal médio é de ' + pesoIdealMedioFM + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximoFM + 'kg');
+        }
+
+    </script>
+
+    <div class="voltar">
+        <a href="index.html">voltar</a>
+    </div>
+
+</body>
+
+</html>

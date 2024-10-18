@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X74GNTJ5TF"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-X74GNTJ5TF'); </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5445467448183616"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="PLANILHAS DE TREINOS">
+    <meta name="keywords" content="planilha de treino,musculação,crossfit,treinamento funcional">
+    <meta name="author" content="Ulisses Melo">
+    <title>PERCENTUALMASC</title>
+    <link href="ava.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="teste">
+        <p>COMPOSIÇÃO CORPORAL MASC</p>
+    </div>
+
+    <script>
+        var peso = prompt('informe o seu peso');
+        var tricipital = prompt('informe a dobra cutânea tricipital');
+        var subescapular = prompt('informe a dobra cutânea subescapular');
+        var suprailiaca = prompt('informe a dobra cutânea suprailíaca');
+        var abdominal = prompt('informe a dobra cutânea abdominal');
+        var soma;
+        var constantea;
+        var percentualDeGordura;
+        var pesoDeGordura;
+        var pesoDeGorduraFinall;
+        var massaMagra;
+        var pesoIdealMinimo;
+        var pesoIdealMaximo;
+        var pesoIdealMedio;
+
+        peso = parseFloat(peso);
+        tricipital = parseFloat(tricipital);
+        subescapular = parseFloat(subescapular);
+        suprailiaca = parseFloat(suprailiaca);
+        abdominal = parseFloat(abdominal);
+        soma = parseFloat(soma);
+        constantea = parseFloat(constantea);
+        percentualDeGordura = parseFloat(percentualDeGordura);
+        pesoDeGordura = parseFloat(pesoDeGordura);
+        pesoDeGorduraFinall = parseFloat(pesoDeGorduraFinall);
+        massaMagra = parseFloat(massaMagra);
+        pesoIdealMinimo = parseFloat(pesoIdealMinimo);
+        pesoIdealMaximo = parseFloat(pesoIdealMaximo);
+        pesoIdealMinimo = parseFloat(pesoIdealMinimo);
+
+        soma = tricipital + subescapular + suprailiaca + abdominal;
+        constantea = soma * 0.153;
+        percentualDeGordura = constantea + 5.783;
+        pesoDeGordura = percentualDeGordura * peso;
+        pesoDeGorduraFinall = pesoDeGordura / 100;
+        massaMagra = peso - pesoDeGorduraFinall;
+        pesoIdealMinimo = massaMagra / 0.9;
+        pesoIdealMaximo = massaMagra / 0.82;
+        pesoIdealMedio = (pesoIdealMinimo + pesoIdealMaximo) / 2;
+
+        percentualDeGordura = percentualDeGordura.toFixed(2);
+        pesoDeGorduraFinall = pesoDeGorduraFinall.toFixed(2);
+        massaMagra = massaMagra.toFixed(2);
+        pesoIdealMinimo = pesoIdealMinimo.toFixed(2);
+        pesoIdealMedio = pesoIdealMedio.toFixed(2);
+        pesoIdealMaximo = pesoIdealMaximo.toFixed(2);
+        peso = peso.toFixed(2);
+
+        if (percentualDeGordura < 10) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está muito magro, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 10 && percentualDeGordura < 14) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está EXCELENTE, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 14 && percentualDeGordura < 18) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está MUITO BOM, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 18 && percentualDeGordura < 21) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está BOM, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 21 && percentualDeGordura < 23) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está NA MÉDIA, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 23 && percentualDeGordura < 27) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está ACIMA DA MÉDIA, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 27 && percentualDeGordura < 29) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está RUIM, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+
+        if (percentualDeGordura >= 29) {
+            alert('o seu peso atual é de ' + peso + 'kg, o seu percentual de gordura é de, ' + percentualDeGordura + '%, voce está MUITO RUIM, normal entre 21% e 23%, o seu peso de gordura é de ' + pesoDeGorduraFinall + 'kg, a sua massa magra é de ' + massaMagra + 'kg, o seu peso ideal mínimo é de ' + pesoIdealMinimo + 'kg, o seu peso ideal médio é de ' + pesoIdealMedio + 'kg, e o seu peso ideal máximo é de ' + pesoIdealMaximo + 'kg');
+        }
+        //if (imc >= 18.5 && imc < 25) {
+        //alert('o seu IMC é de, ' + result + ' voce está normal, normal entre 18.5 e 24.9');
+        //}
+
+        //if (imc >= 25 && imc < 30) {
+        //alert('o seu IMC é de, ' + result + ' voce está com sobrepeso, normal entre 18.5 e 24.9');
+        //}
+
+        //if (imc >= 30 && imc < 35) {
+        //alert('o seu IMC é de, ' + result + ' voce está com obesidade I, normal entre 18.5 e 24.9');
+        //}
+
+        //if (imc >= 35 && imc < 40) {
+        //alert('o seu IMC é de, ' + result + ' voce está com obesidade II, normal entre 18.5 e 24.9');
+        //}
+
+        //if (imc >= 40) {
+        //alert('o seu IMC é de, ' + result + ' voce está com obesidade III, normal entre 18.5 e 24.9');
+        //}
+
+    </script>
+
+    <div class="voltar">
+        <a href="index.html">voltar</a>
+    </div>
+
+</body>
+
+</html>
